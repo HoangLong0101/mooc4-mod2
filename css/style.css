@@ -1,0 +1,57 @@
+title{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+#heading{
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    width: 100%;
+}
+/* Base styles (Default layout for small screens) */
+body {
+    display: flex;
+    flex-wrap: wrap; /* Allows divs to wrap on small screens */
+    gap: 10px; /* Space between divs */
+    justify-content: center; /* Center divs */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.imgage {
+    width: 100vw;/* Default to full width on small screens */
+    height: auto; /* Allow dynamic height */
+    padding: 20px; /* Add some padding inside the div */    
+}
+
+img {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #3E01A1 ;
+    max-width:auto; /* Responsive images by default */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures images do not have inline spacing */
+}
+
+/* Media Query #1: Tablet View (Triggered at 772px) */
+@media (max-width: 772px) {
+    .imgage {
+        width: 40vw; /* 45% of viewport width */
+    }
+    img {
+        max-width: auto; /* Responsive images by default */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Ensures images do not have inline spacing */
+    }
+}
+
+/* Media Query #2: Large Screen View (Triggered at 998px) */
+@media (min-width: 998px) {
+    .imgage {
+        width: 30vw; /* 30% of viewport width */
+    }
+    
+    /* No additional changes for images are required */
+}
